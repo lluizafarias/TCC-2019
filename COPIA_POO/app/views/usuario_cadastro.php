@@ -64,7 +64,7 @@
 
                             <div class="field">
                                 <label>E-mail</label>
-                                <input name="email" id="email" type="text" placeholder="Ex: ivoreigel@gmail.com">
+                                <input name="email" id="email" type="text" placeholder="Ex: ivo_reigel@gmail.com">
                             </div>
 
                             <div class="field">

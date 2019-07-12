@@ -7,7 +7,7 @@
             try{
                 if (!isset(self::$conexao)) {
                     //Não é $Conexao
-                    self::$conexao = new pdo("mysql:host=localhost; dbname=tcc_atualizado","root",""); //;
+                    self::$conexao = new pdo("mysql:host=localhost; dbname=qrlist","root",""); //;
                 }
 
             }catch(PDOException $e){

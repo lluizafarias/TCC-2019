@@ -47,9 +47,8 @@ class Usuario {
 
         public function salvar_usuario($primeiro_nome, $telefone, $sobrenome, $senha, $cpf, $email){
 
-            $sql_resultado = "insert into usuario(primeiro_nome, telefone, sobrenome, senha, cpf, email, cod_tip_usu, cod_end_cod) values ('$primeiro_nome', '$sobrenome', '$cpf', '$telefone', '$email', '$senha', 1, 1)";
+            $sql_resultado = "insert into usuario(primeiro_nome, telefone, sobrenome, senha, cpf, email, cod_tip_usu_codDDDDDdddDD/][=z]) values ('$primeiro_nome', '$telefone', '$sobrenome', '$senha', '$cpf', '$email', 1)";
             $resultado_usuario = $this->conexao_usuario->exec($sql_resultado);
-
             return $resultado_usuario;
         }
 

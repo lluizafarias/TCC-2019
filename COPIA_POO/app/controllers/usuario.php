@@ -1,19 +1,14 @@
 <?php
 
-    require __DIR__."/../models/Usuario.php";
-    require __DIR__."/../controllers/endereco.php";
-
     function index(){
         require __DIR__."/../views/home.php";
 
     }
+    require __DIR__."/../models/Usuario.php";
+
 
     function cadastrar_usuario(){
         require __DIR__."/../views/usuario_cadastro.php";
-    }
-
-    function cadastrar_endereco(){
-        require __DIR__."/../views/usuario_cadastro_endereco.php";
     }
 
     function salvar_usuario(){
@@ -28,7 +23,7 @@
         $user = new Usuario();
         $user->salvar_usuario($primeiro_nome, $telefone, $sobrenome, $senha, $cpf, $email);
 
-        cadastrar_endereco();
+        index();
     }
 
     function editar(){
